@@ -42,7 +42,7 @@
   </head>
   <body>
     <!-- Navbar section  -->
-    <section class="max-w-screen-2xl mx-auto lg:py-12 py-6">
+    <section class="max-w-screen-2xl mx-auto lg:py-12 py-6" id="home">
       <div class="max-w-screen-xl mx-auto navbar font-raleway">
         <div class="navbar-start">
           <div class="dropdown">
@@ -66,10 +66,10 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Destination</a></li>
-              <li><a>Search</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#banner">About</a></li>
+              <li><a href="#bus">Destination</a></li>
+              <li><a href="#ticket">Search</a></li>
             </ul>
           </div>
           <a class="text-2xl lg:text-4xl font-extrabold text-black1"
@@ -80,14 +80,15 @@
           <ul
             class="menu menu-horizontal px-1 text-lg font-raleway font-medium text-black1/[0.7]"
           >
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Destination</a></li>
-            <li><a>Search</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#banner">About</a></li>
+            <li><a href="#bus">Destination</a></li>
+            <li><a href="#ticket">Search</a></li>
           </ul>
         </div>
         <div class="navbar-end">
           <a
+            href="#bus"
             class="btn bg-primary/[0.1] flex justify-center items-center gap-x-2 border border-primary/[0.4] border-solid rounded-xl"
           >
             <span class="text-xl font-bold text-primary">Bus</span>
@@ -97,9 +98,9 @@
       </div>
     </section>
     <!-- Banner section  -->
-    <section class="max-w-screen-2xl mx-auto px-5 lg:px-0">
+    <section class="max-w-screen-2xl mx-auto px-5 lg:px-0" id="banner">
       <div
-        class="hero h-[430px] lg:h-[550px] max-w-screen-xl mx-auto rounded-3xl"
+        class="hero h-[500px] lg:h-[550px] max-w-screen-xl mx-auto rounded-3xl"
         style="
           background-image: url(images/banner.png);
           background-size: 100% 100%;
@@ -122,14 +123,14 @@
             <button
               class="btn text-black bg-primary font-bold font-raleway text-xl border-none"
             >
-              Buy Tickets
+              <a href="#ticket"> Buy Tickets</a>
             </button>
           </div>
         </div>
       </div>
     </section>
     <!-- Badge section  -->
-    <section class="max-w-screen-2xl mx-auto px-5 lg:px-0">
+    <section class="max-w-screen-2xl mx-auto px-5 lg:px-0" id="badge">
       <div
         class="max-w-screen-lg mx-auto flex flex-col gap-4 lg:flex-row justify-between lg:relative lg:-top-16"
       >
@@ -274,6 +275,7 @@
     </section>
     <!-- Paribahan section -->
     <section
+      id="bus"
       class="max-w-screen-2xl mx-auto px-5 lg:px-0 pt-14 lg:pt-28 bg-[#F7F8F8] border-t-2 border-solid border-primary rounded-t-[88px] pb-7"
     >
       <div class="max-w-screen-xl mx-auto">
@@ -412,6 +414,7 @@
     </section>
     <!-- Seat section -->
     <section
+      id="ticket"
       class="max-w-screen-2xl mx-auto px-5 lg:px-0 bg-[#F7F8F8] pb-12 lg:pb-28"
     >
       <div
@@ -1010,7 +1013,7 @@
           class="border border-dashed border-white/[0.3] mt-6 lg:mt-12"
         ></div>
         <div
-          class="flex flex-col items-start gap-4 lg:flex-row lg:items-center mt-4 lg:mt-8"
+          class="flex flex-col items-start gap-4 lg:flex-row lg:items-center lg:justify-between mt-4 lg:mt-8"
         >
           <div
             class="font-inter font-normal text-[12px] lg:text-base text-white/[0.7]"
