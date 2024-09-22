@@ -13,6 +13,7 @@ let passengerName = document.getElementById("Passenger-name");
 let passengerPhone = document.getElementById("Passenger-phone");
 let passengerEmail = document.getElementById("Passenger-email");
 let formBtn = document.getElementById("form-btn");
+let modalBtn = document.getElementById("modal-btn");
 let arr = [];
 function ticketBooked(event) {
   let buttonClicked = event.target;
@@ -67,9 +68,6 @@ couponApplyBtn.addEventListener("click", function () {
     discountDivElement.classList.remove("hidden");
     discountDivElement.classList.add("flex");
     grandTotalPrice.innerText = ticketPrice;
-    passengerName.removeAttribute("disabled");
-    passengerPhone.removeAttribute("disabled");
-    passengerEmail.removeAttribute("disabled");
   }
 
   if (couponInput.value === "Couple 20") {
@@ -81,9 +79,6 @@ couponApplyBtn.addEventListener("click", function () {
     discountDivElement.classList.remove("hidden");
     discountDivElement.classList.add("flex");
     grandTotalPrice.innerText = ticketPrice;
-    passengerName.removeAttribute("disabled");
-    passengerPhone.removeAttribute("disabled");
-    passengerEmail.removeAttribute("disabled");
   }
 });
 
@@ -91,4 +86,8 @@ passengerPhone.addEventListener("input", function () {
   if (passengerPhone.value.length > 10) {
     formBtn.removeAttribute("disabled");
   }
+});
+
+modalBtn.addEventListener("click", function () {
+  window.location.reload();
 });
