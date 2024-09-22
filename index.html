@@ -266,10 +266,28 @@
         </div>
         <div class="flex justify-center mt-7 lg:mt-16">
           <button
+            onclick="my_modal_2.showModal()"
             class="btn font-raleway font-bold text-xl text-primary bg-white border border-primary border-solid"
           >
             See All Offers
           </button>
+          <!-- Open the modal using ID.showModal() method -->
+          <dialog id="my_modal_2" class="modal">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold text-center">
+                Thank you for exploring our offer
+              </h3>
+              <p class="py-4 text-center">
+                Just two coupons are available for you sir,
+              </p>
+              <div class="modal-action flex justify-center">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn bg-primary text-white">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </div>
     </section>
@@ -884,6 +902,7 @@
                 >
               </div>
               <input
+                disabled
                 id="Passenger-name"
                 type="text"
                 placeholder="Enter your name"
@@ -898,6 +917,7 @@
                 >
               </div>
               <input
+                disabled
                 id="Passenger-phone"
                 type="text"
                 placeholder="Enter your phone number"
@@ -912,6 +932,7 @@
                 >
               </div>
               <input
+                disabled
                 id="Passenger-email"
                 type="text"
                 placeholder="Enter your email id"

@@ -51,6 +51,9 @@ function ticketBooked(event) {
     couponInput.removeAttribute("disabled");
     couponApplyBtn.removeAttribute("disabled");
   }
+  passengerName.removeAttribute("disabled");
+  passengerPhone.removeAttribute("disabled");
+  passengerEmail.removeAttribute("disabled");
 }
 
 couponApplyBtn.addEventListener("click", function () {
